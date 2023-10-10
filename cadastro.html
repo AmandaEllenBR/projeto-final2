@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="body2">
+   
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome*</label>
+                        <input id="name" type="text"  placeholder="Digite Seu Nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">Email*</label>
+                        <input id="email" type="email"  placeholder="Digite seu E-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular/WhatsApp*</label>
+                        <input id="number" type="tel"  placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="servico">Serviços*</label>
+                        <select id="selecione" id="selecione" data-use-tyoe="STRING" required>
+                            <option value="">Selecione</option>
+                            <option value="Depilação">Depilação</option>
+                            <option value="Tratamento Capilar">Tratamento Capilar</option>
+                            <option value="Unhas De Gel">Unhas De Gel</option>
+                            <option value="Unhas De Fibra">Unhas De Fibra</option>
+                            <option value="Design De Sobrancelhas">Design De Sobrancelhas</option>
+                            <option value="Pé e Mão">Pé e Mão</option>
+                            <option value="Cosméticos">Cosméticos</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mydict">
+                    <div>
+                        <label>
+                            <input type="radio" name="radio" checked="">
+                            <span>Mulher</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio">
+                            <span>Homem</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio">
+                            <span>Outros</span>
+                        </label>
+                        
+                    </div>
+                </div>
+              <p>AGENDAMENTO*</p>
+              <label for="data-use-tyoe">Mês e Dia:</label>
+              <input type="date" name="data" id="data">
+
+              <label for="hora">Horario:</label>
+              <input type="time" name="Horario" id="Horario">
+
+
+                <div class="btn">
+                    <button type="submit" id="btn" >Agendar Visita</button>
+                </div>
+
+
+               
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
